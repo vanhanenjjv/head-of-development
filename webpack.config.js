@@ -1,7 +1,5 @@
 const path = require('path')
 
-const nodeExternals = require('webpack-node-externals')
-
 const BannerPlugin = require('webpack').BannerPlugin
 const CopyPlugin = require('copy-webpack-plugin')
 
@@ -10,7 +8,6 @@ module.exports = {
   mode: 'production',
   target: 'node',
   entry: './src/index.ts',
-  externals: [nodeExternals()],
   module: {
     rules: [
       {
