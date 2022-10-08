@@ -9,7 +9,7 @@ interface ViewOptions {
 }
 
 function view(options: ViewOptions): string {
-  return `<img src="/images/${options.imageFileName}" style="width: 100%;">`
+  return `<img alt="" src="/images/${options.imageFileName}" style="width: 100%;">`
 }
 
 function randomElement<T>(array: T[]): T {
